@@ -24,6 +24,8 @@ This image installs EmberJs and Chrome facilitating testing, running and buildin
 
 ### Create a `Dockerfile` in your project
 
+Add the following `Dockerfile` to your project:
+
 ```
 FROM robert96/ember-js:3.20
 
@@ -32,6 +34,34 @@ WORKDIR /ember-app
 
 RUN npm install
 CMD ember serve
+```
+
+Add the following `.dockerignore` to your project:
+
+```
+# compiled output
+/dist/
+/tmp/
+
+# dependencies
+/bower_components/
+/node_modules/
+
+# misc
+/.env*
+/.pnp*
+/.sass-cache
+/connect.lock
+/coverage/
+/libpeerconnection.log
+/npm-debug.log*
+/testem.log
+/yarn-error.log
+
+# ember-try
+/.node_modules.ember-try/
+/bower.json.ember-try
+/package.json.ember-try
 ```
 
 Then, run the commands to build and run the Docker image:
