@@ -36,7 +36,7 @@ RUN npm install
 CMD ember serve
 ```
 
-Add the following `.dockerignore` to your project:
+And the following `.dockerignore`:
 
 ```
 # compiled output
