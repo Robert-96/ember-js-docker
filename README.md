@@ -28,6 +28,9 @@ This image installs EmberJs and Chrome facilitating testing, running and buildin
 FROM robert96/ember-js:latest
 
 COPY . /ember-app
+WORKDIR /ember-app
+
+RUN npm install
 RUN ember serve
 ```
 
