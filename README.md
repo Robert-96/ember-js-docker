@@ -48,7 +48,6 @@ Add the following `.dockerignore` to your project:
 /node_modules/
 
 # misc
-/.env*
 /.pnp*
 /.sass-cache
 /connect.lock
