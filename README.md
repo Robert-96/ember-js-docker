@@ -18,7 +18,7 @@ Docker images for EmberJs.
 * [`3.9` (Dockerfile)](https://github.com/Robert-96/ember-js-docker/blob/version/latest/Dockerfile)
 * [`3.8` (Dockerfile)](https://github.com/Robert-96/ember-js-docker/blob/version/latest/Dockerfile)
 
-## How to use this image?
+## How to use this image
 
 This image installs EmberJs and Chrome facilitating testing, running and building EmberJs applications.
 
