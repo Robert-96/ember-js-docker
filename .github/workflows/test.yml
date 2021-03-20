@@ -5,6 +5,7 @@ on: push
 jobs:
   new-app:
     name: Create a new ember app
+    runs-on: ubuntu-latest
     container: robert96/ember-js:latest
 
     steps:
