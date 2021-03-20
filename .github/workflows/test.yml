@@ -14,9 +14,13 @@ jobs:
           ember new ember-app
           cd ember-app
 
-      - name: Lint
+      - name: Lint HBS files
         run: |
-          npm run lint
+          npm run lint:hbs
+
+      - name: Lint JS files
+        run: |
+          npm run lint:js
 
       - name: Test
         run: |
