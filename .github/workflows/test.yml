@@ -12,20 +12,23 @@ jobs:
       - name: Create a new app
         run: |
           ember new ember-app
-          cd ember-app
 
       - name: Lint HBS files
         run: |
+          cd ember-app
           npm run lint:hbs
 
       - name: Lint JS files
         run: |
+          cd ember-app
           npm run lint:js
 
       - name: Test
         run: |
+          cd ember-app
           ember test
 
       - name: Build
         run: |
+          cd ember-app
           ember test
