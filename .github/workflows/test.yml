@@ -32,3 +32,38 @@ jobs:
         run: |
           cd ember-app
           ember test
+
+  super-rentals:
+    name: Test super-rentals example
+    runs-on: ubuntu-latest
+    container: robert96/ember-js:latest
+
+    steps:
+      - name: Clone the git repository
+        run: |
+          git clone https://github.com/ember-learn/super-rentals
+
+      - name: Install NPM dependencies
+        run: |
+          cd super-rentals
+          npm install
+
+      - name: Lint HBS files
+        run: |
+          cd super-rentals
+          npm run lint:hbs
+
+      - name: Lint JS files
+        run: |
+          cd super-rentals
+          npm run lint:js
+
+      - name: Test
+        run: |
+          cd super-rentals
+          ember test
+
+      - name: Build
+        run: |
+          cd super-rentals
+          ember test
