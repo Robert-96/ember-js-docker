@@ -1,0 +1,26 @@
+name: Test
+
+on: push
+
+jobs:
+  new-app:
+    name: Create a new ember app
+    container: robert96/ember-js:latest
+
+    steps:
+      - name: Create a new app
+        run: |
+          ember new ember-app
+          cd ember-app
+
+      - name: Lint
+        run: |
+          npm run lint
+
+      - name: Test
+        run: |
+          ember test
+
+      - name: Build
+        run: |
+          ember test
